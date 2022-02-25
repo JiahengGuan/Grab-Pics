@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> API(ANIAPI + GETPOCKET) : Get random animes' cover image link to your page</title>
+		<style>
+			body, form{
+				margin: 0 auto;
+				max-width:800px;
+				overflow-x:hidden;
+			}
+			fieldset{
+				display: flex;
+			}
+			input#number{
+				flex-grow:100;
+				margin: 0 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="aniapi" method="get">
+			<fieldset>
+				<label for="number">Numbers of random anime:</label>
+				<input id="number" name="number" type="number" min = 1 max = 1000 required/>
+				<input type="submit" value="Submit" />
+			</fieldset>
+		</form>
+	</body>
+</html>
